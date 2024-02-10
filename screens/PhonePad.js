@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TouchableOpacity,Text } from 'react-native';
+import { View, TouchableOpacity,Text,Button } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 const PhonePad = () => {
   const [input, setInput] = useState('');
@@ -10,13 +10,20 @@ const PhonePad = () => {
 
   return (
     <View style={{ flex: 1, justifyContent: 'space-between',alignItems:'center'}}>
-      <Text style={{color: '#FFFFFF' , fontSize: 24, fontWeight: 'bold'}}>'
+      <View style = {{flexDirection:'row'}}>
+        
+                    
+        <Text style={{color: '#FFFFFF' , fontSize: 24, fontWeight: 'bold'}}>'
 
-        {
-          input
-        }
-      </Text>
-      
+          {
+            input
+          }
+        </Text>
+        <Button
+                            title="Continue"
+                            color="#03DAA5"
+        />
+      </View>
       <View style={{ flexDirection: 'row', marginTop: 10,justifyContent:'space-between' ,width:'100%'}}>
         <TouchableOpacity onPress={() => handleKeyPress('1')}>
           <Text style={{color: '#FFFFFF' , fontSize: 24, fontWeight: 'bold'}}>1</Text>

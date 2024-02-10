@@ -11,12 +11,9 @@ const SignUp = () => {
                     <Image source={require('/home/lagrinch/Augmented-Reality-Mobile-Application/assets/icon_phone.png')} style={styles.icon_phone} />
                     <Text style={styles.text1}>Continue with Phone</Text>
                 </View>
-                <View style={styles.bottomHalf}>
+                < View style={styles.bottomHalf}>
+                    
                     <PhonePad style={styles.pad}/>
-                    <Button
-                        title="Continue"
-                        color="#03DAA5"
-                    />
                     <Text style={styles.termsText}>Terms & Conditions Apply*</Text>
                 </View>
                 

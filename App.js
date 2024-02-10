@@ -7,8 +7,8 @@ import OTPInput from './screens/OTPInput';
 export default function App() {
   return (
     <View style={styles.container}>
-      <VerifiedPage/>
-
+      <LoginPage/>
+      
       
       <StatusBar style="auto" />
     </View>

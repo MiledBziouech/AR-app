@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, SafeAreaView,ImageBackground, handlePress, Touc
 import PhonePad from './PhonePad';
 import { Entypo } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import OTPInput from './OTPInput';
 
 const LoginPage = () => {
    // const navigation = useNavigation(); // Moved inside the component
@@ -22,8 +23,9 @@ const LoginPage = () => {
                             <Entypo name="cross" size={24} color="black" />
                         </TouchableOpacity>
                         <View>
-                            <Text style={styles.text1}>Code is sent to {phone_number}</Text>
-                            
+                                <Text style={styles.text1}>Code is sent to {phone_number}</Text>
+                                <OTPInput />
+                        
                             </View>    
                     </View>
                     <View style={styles.bottomHalf}>
